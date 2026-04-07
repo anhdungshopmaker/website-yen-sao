@@ -37,8 +37,17 @@
 
 .sectionTitle {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: var(--spacing-2xl);
+  color: var(--color-primary-dark);
+  /* Bọc tiêu đề trong kính để không bị lẫn vào nền biển ngang */
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(15px);
+  padding: 10px 40px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
 .uspGrid {
@@ -49,7 +58,7 @@
 }
 
 .uspCard {
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.65);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   padding: var(--spacing-2xl);
@@ -62,8 +71,8 @@
 .uspCard:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.2);
-  background: rgba(255, 255, 255, 0.35);
-  border-color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(255, 255, 255, 0.9);
 }
 
 .uspIcon {
@@ -79,7 +88,7 @@
 }
 
 .productCard {
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.65);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: var(--radius-lg);
@@ -93,12 +102,12 @@
 .productCard:hover {
   box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.2);
   transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.85);
 }
 
 .productImgBox {
   height: 250px;
-  background-color: var(--color-secondary-light);
+  background-color: rgba(238, 223, 163, 0.2); /* var(--color-secondary-light) but transparent */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,6 +130,7 @@
   border-radius: 20px;
   font-weight: 600;
   font-size: 0.8rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .productInfo {
@@ -132,17 +142,19 @@
   font-size: 1.1rem;
   margin-bottom: var(--spacing-sm);
   font-family: var(--font-inter);
+  color: #111;
+  font-weight: 600;
 }
 
 .productPrice {
-  color: var(--color-primary);
+  color: var(--color-primary-dark);
   font-weight: bold;
   font-size: 1.2rem;
 }
 
 .originalPrice {
   text-decoration: line-through;
-  color: #999;
+  color: #777;
   font-size: 0.9rem;
   margin-right: 10px;
 }
@@ -150,6 +162,10 @@
 .ctaWrapper {
   text-align: center;
   margin-top: var(--spacing-2xl);
+}
+.ctaWrapper .btn {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
 }
 
 /* Reviews */
@@ -160,7 +176,7 @@
 }
 
 .reviewCard {
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.5);

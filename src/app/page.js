@@ -16,7 +16,9 @@ export default function Home() {
 
       {/* Unique Selling Proposition (USP) */}
       <section className={`container ${styles.section}`}>
-        <h2 className={styles.sectionTitle}>Tại sao chọn Yến Thành?</h2>
+        <div style={{ textAlign: 'center' }}>
+           <h2 className={styles.sectionTitle}>Tại sao chọn Yến Thành?</h2>
+        </div>
         <div className={styles.uspGrid}>
           <div className={styles.uspCard}>
             <ShieldCheck size={48} className={styles.uspIcon} />
