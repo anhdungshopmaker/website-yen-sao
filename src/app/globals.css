@@ -36,16 +36,16 @@
 
 body {
   font-family: var(--font-inter), sans-serif;
-  color: var(--color-text);
-  /* Biến thành background toàn trang fix cứng để làm nền cho Glassmorphism */
-  background: url('/banner.png') center/cover no-repeat fixed;
+  color: #FDFBF7; /* Đổi màu chữ cơ bản thành màu trắng ngà cho nổi trên nền đen */
+  /* Nền đại dương được làm tối đi để chữ và thẻ kính nổi bật hơn */
+  background: linear-gradient(rgba(10, 15, 25, 0.6), rgba(10, 15, 25, 0.8)), url('/banner.png') center/cover no-repeat fixed;
   line-height: 1.6;
   min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-playfair), serif; /* Classic, premium feel */
-  color: var(--color-primary);
+  color: var(--color-secondary); /* Đổi tiêu đề thành vàng đồng ánh kim cao cấp */
   margin-bottom: var(--spacing-md);
   font-weight: 600;
 }
@@ -97,12 +97,12 @@ img {
 
 .btn-outline {
   background-color: transparent;
-  border-color: var(--color-primary);
-  color: var(--color-primary);
+  border-color: var(--color-secondary);
+  color: var(--color-secondary);
 }
 .btn-outline:hover {
-  background-color: var(--color-primary);
-  color: #FFF;
+  background-color: var(--color-secondary);
+  color: var(--color-primary-dark);
 }
 
 .grid {

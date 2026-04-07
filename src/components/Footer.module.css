@@ -1,12 +1,12 @@
 .footer {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(10, 15, 25, 0.6);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: var(--spacing-3xl) 0 var(--spacing-lg);
   margin-top: var(--spacing-3xl);
-  box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.1);
-  color: #111;
+  box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.3);
+  color: #FDFBF7;
 }
 
 .footerGrid {
@@ -22,7 +22,7 @@
 }
 
 .footerCol p, .footerCol li {
-  color: var(--color-text-light);
+  color: #ccc;
   margin-bottom: var(--spacing-sm);
   line-height: 1.6;
 }
@@ -33,14 +33,14 @@
 }
 
 .footerCol a:hover {
-  color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 .bottom {
   text-align: center;
   padding-top: var(--spacing-md);
-  border-top: 1px solid var(--color-border);
-  color: var(--color-text-light);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #999;
   font-size: 0.9rem;
 }
 

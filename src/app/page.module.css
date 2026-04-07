@@ -39,15 +39,15 @@
   text-align: center;
   font-size: 2.2rem;
   margin-bottom: var(--spacing-2xl);
-  color: var(--color-primary-dark);
+  color: var(--color-secondary);
   /* Bọc tiêu đề trong kính để không bị lẫn vào nền biển ngang */
   display: inline-block;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(10, 15, 25, 0.5);
   backdrop-filter: blur(15px);
   padding: 10px 40px;
   border-radius: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
 }
 
 .uspGrid {
@@ -58,25 +58,25 @@
 }
 
 .uspCard {
-  background: rgba(255, 255, 255, 0.65);
+  background: rgba(15, 20, 30, 0.5);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   padding: var(--spacing-2xl);
   border-radius: var(--radius-lg);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .uspCard:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.2);
-  background: rgba(255, 255, 255, 0.85);
-  border-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.4);
+  background: rgba(20, 25, 40, 0.7);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .uspIcon {
-  color: var(--color-primary);
+  color: var(--color-secondary);
   margin-bottom: var(--spacing-md);
 }
 
@@ -88,26 +88,26 @@
 }
 
 .productCard {
-  background: rgba(255, 255, 255, 0.65);
+  background: rgba(15, 20, 30, 0.5);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
   transition: all 0.3s;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
 }
 
 .productCard:hover {
-  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.4);
   transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(20, 25, 40, 0.7);
 }
 
 .productImgBox {
   height: 250px;
-  background-color: rgba(238, 223, 163, 0.2); /* var(--color-secondary-light) but transparent */
+  background-color: rgba(0, 0, 0, 0.3); /* Nền ảnh tối */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,7 +130,7 @@
   border-radius: 20px;
   font-weight: 600;
   font-size: 0.8rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
 .productInfo {
@@ -142,19 +142,19 @@
   font-size: 1.1rem;
   margin-bottom: var(--spacing-sm);
   font-family: var(--font-inter);
-  color: #111;
+  color: #FDFBF7;
   font-weight: 600;
 }
 
 .productPrice {
-  color: var(--color-primary-dark);
+  color: var(--color-secondary);
   font-weight: bold;
   font-size: 1.2rem;
 }
 
 .originalPrice {
   text-decoration: line-through;
-  color: #777;
+  color: #999;
   font-size: 0.9rem;
   margin-right: 10px;
 }
@@ -164,8 +164,12 @@
   margin-top: var(--spacing-2xl);
 }
 .ctaWrapper .btn {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(10, 15, 25, 0.6);
   backdrop-filter: blur(10px);
+  border-color: var(--color-secondary);
+}
+.ctaWrapper .btn:hover {
+  background: var(--color-secondary);
 }
 
 /* Reviews */
@@ -176,10 +180,10 @@
 }
 
 .reviewCard {
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(15, 20, 30, 0.5);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
   padding: var(--spacing-xl);
   border-radius: var(--radius-lg);
