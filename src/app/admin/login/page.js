@@ -16,23 +16,13 @@ export default function AdminLogin() {
     setLoading(true);
     setError('');
 
-    // Dùng Supabase Auth hoặc cơ chế bypass local
-    // Để cho phép bạn test ngay mà không cần cấu hình email trên db, 
-    // Mình sẽ tạo thêm check admin cứng. Hoặc nếu bạn đã tạo tk Supabase, nó sẽ chạy qua Supabase.
-    
-    if (email === 'admin' && password === '123456') {
-      localStorage.setItem('admin_session', 'true');
-      router.push('/admin');
-      return;
-    }
-
     const { data, error } = await supabase.auth.signInWithPassword({
       email: email,
       password: password,
     });
 
     if (error) {
-      setError("Email hoặc Mật khẩu không đúng! Hãy thử 'admin' / '123456' để trải nghiệm.");
+      setError("Email hoặc Mật khẩu không đúng! Hãy kiểm tra lại tài khoản trên Supabase.");
       setLoading(false);
     } else {
       localStorage.setItem('admin_session', 'true');
