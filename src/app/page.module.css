@@ -15,7 +15,7 @@
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), url('https://images.unsplash.com/photo-1596403061033-0c3062bf6a20?w=1600&q=80') center/cover;
+  background: url('/banner.png') center/cover no-repeat;
   z-index: 0;
 }
 
