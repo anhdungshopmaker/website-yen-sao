@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './page.module.css';
-import { ShieldCheck, MapPin, Feather, PhoneCall } from 'lucide-react';
+import { ShieldCheck, Award, Truck, PhoneCall } from 'lucide-react';
 
 export default function Home() {
   return (
