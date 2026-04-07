@@ -37,7 +37,7 @@ export default function Home() {
       </section>
 
       {/* Sản Phẩm Nổi Bật */}
-      <section className={`container ${styles.section}`} style={{ backgroundColor: 'var(--color-bg-alt)' }}>
+      <section className={`container ${styles.section}`}>
         <h2 className={styles.sectionTitle}>Sản Phẩm Nổi Bật</h2>
         <div className={styles.productGrid}>
           {/* Mockup Product 1 */}

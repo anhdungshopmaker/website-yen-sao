@@ -37,8 +37,10 @@
 body {
   font-family: var(--font-inter), sans-serif;
   color: var(--color-text);
-  background-color: var(--color-bg);
+  /* Biến thành background toàn trang fix cứng để làm nền cho Glassmorphism */
+  background: url('/banner.png') center/cover no-repeat fixed;
   line-height: 1.6;
+  min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
