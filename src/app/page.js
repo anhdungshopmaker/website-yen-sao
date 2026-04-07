@@ -21,9 +21,9 @@ export default function Home() {
 
       {/* Unique Selling Proposition (USP) */}
       <section className={`container ${styles.section}`}>
-        <div className={styles.titleWrapper}>
-           <div className={styles.titleGlassPill}>
-             <h2 className={styles.sectionTitle}>Tại sao chọn Yến Thành?</h2>
+        <div style={{ display: 'flex', justifyContent: 'center', width: '100%', marginBottom: '40px' }}>
+           <div style={{ background: 'rgba(255,255,255,0.85)', backdropFilter: 'blur(15px)', WebkitBackdropFilter: 'blur(15px)', padding: '10px 40px', borderRadius: '50px', border: '1px solid rgba(255,255,255,0.6)', boxShadow: '0 8px 32px 0 rgba(0,0,0,0.1)' }}>
+             <h2 style={{ margin: 0, fontSize: '2.2rem', fontFamily: 'var(--font-playfair)', backgroundImage: 'linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C)', WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent', WebkitTextFillColor: 'transparent', fontWeight: 800, textAlign: 'center' }}>Tại sao chọn Yến Thành?</h2>
            </div>
         </div>
         <div className={styles.uspGrid}>
@@ -47,9 +47,9 @@ export default function Home() {
 
       {/* Sản Phẩm Nổi Bật */}
       <section className={`container ${styles.section}`}>
-        <div className={styles.titleWrapper}>
-           <div className={styles.titleGlassPill}>
-             <h2 className={styles.sectionTitle}>Sản Phẩm Nổi Bật</h2>
+        <div style={{ display: 'flex', justifyContent: 'center', width: '100%', marginBottom: '40px' }}>
+           <div style={{ background: 'rgba(255,255,255,0.85)', backdropFilter: 'blur(15px)', WebkitBackdropFilter: 'blur(15px)', padding: '10px 40px', borderRadius: '50px', border: '1px solid rgba(255,255,255,0.6)', boxShadow: '0 8px 32px 0 rgba(0,0,0,0.1)' }}>
+             <h2 style={{ margin: 0, fontSize: '2.2rem', fontFamily: 'var(--font-playfair)', backgroundImage: 'linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C)', WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent', WebkitTextFillColor: 'transparent', fontWeight: 800, textAlign: 'center' }}>Sản Phẩm Nổi Bật</h2>
            </div>
         </div>
         <div className={styles.productGrid}>
@@ -117,9 +117,9 @@ export default function Home() {
 
       {/* Đánh Giá Khách Hàng */}
       <section className={`container ${styles.section}`}>
-        <div className={styles.titleWrapper}>
-           <div className={styles.titleGlassPill}>
-             <h2 className={styles.sectionTitle}>Khách Hàng Nói Gì Về Chúng Tôi</h2>
+        <div style={{ display: 'flex', justifyContent: 'center', width: '100%', marginBottom: '40px' }}>
+           <div style={{ background: 'rgba(255,255,255,0.85)', backdropFilter: 'blur(15px)', WebkitBackdropFilter: 'blur(15px)', padding: '10px 40px', borderRadius: '50px', border: '1px solid rgba(255,255,255,0.6)', boxShadow: '0 8px 32px 0 rgba(0,0,0,0.1)' }}>
+             <h2 style={{ margin: 0, fontSize: '2.2rem', fontFamily: 'var(--font-playfair)', backgroundImage: 'linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C)', WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent', WebkitTextFillColor: 'transparent', fontWeight: 800, textAlign: 'center' }}>Khách Hàng Nói Gì Về Chúng Tôi</h2>
            </div>
         </div>
         <div className={styles.reviewGrid}>

@@ -2,6 +2,7 @@ import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const inter = Inter({ subsets: ["latin", "vietnamese"], variable: '--font-inter' });
 const playfair = Playfair_Display({ subsets: ["latin", "vietnamese"], variable: '--font-playfair' });
@@ -23,8 +24,9 @@ export default function RootLayout({ children }) {
     <html lang="vi">
       <body className={`${inter.variable} ${playfair.variable}`}>
         <Header />
-        {children}
+        <main>{children}</main>
         <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );
