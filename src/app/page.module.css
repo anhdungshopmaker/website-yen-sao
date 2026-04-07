@@ -52,12 +52,7 @@
   padding: var(--spacing-3xl) 0;
 }
 
-.sectionTitle {
-  text-align: center;
-  font-size: 2.2rem;
-  margin-bottom: var(--spacing-2xl);
-  color: #1A365D; /* Chữ Navy */
-  /* Bọc tiêu đề trong kính để không bị lẫn vào nền biển ngang */
+.titleGlassPill {
   display: inline-block;
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(15px);
@@ -65,6 +60,19 @@
   border-radius: 50px;
   border: 1px solid rgba(255, 255, 255, 0.6);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.sectionTitle {
+  font-size: 2.2rem;
+  margin: 0;
+  font-family: var(--font-playfair);
+  background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  text-shadow: 1px 1px 0px rgba(100, 70, 15, 0.4);
 }
 
 .uspGrid {
@@ -208,6 +216,38 @@
   border-radius: var(--radius-lg);
   font-style: italic;
   position: relative;
+}
+
+/* ---------------- TỐI ƯU MOBILE (RESPONSIVE) ---------------- */
+@media (max-width: 992px) {
+  .productGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  .heroSubtitle {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  .uspGrid, .reviewGrid {
+    grid-template-columns: 1fr;
+  }
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+  .titleGlassPill {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .productGrid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .reviewer {

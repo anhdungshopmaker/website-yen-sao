@@ -22,30 +22,36 @@ export default function Home() {
       {/* Unique Selling Proposition (USP) */}
       <section className={`container ${styles.section}`}>
         <div style={{ textAlign: 'center' }}>
-           <h2 className={styles.sectionTitle}>Tại sao chọn Yến Thành?</h2>
+           <div className={styles.titleGlassPill}>
+             <h2 className={styles.sectionTitle}>Tại sao chọn Yến Thành?</h2>
+           </div>
         </div>
         <div className={styles.uspGrid}>
           <div className={styles.uspCard}>
             <ShieldCheck size={48} className={styles.uspIcon} />
-            <h3>100% Nguyên Chất</h3>
-            <p>Cam kết không pha trộn, không sử dụng chất tẩy trắng, làm sạch hoàn toàn thủ công.</p>
+            <h3 style={{ color: '#1A365D', fontWeight: 700 }}>100% Nguyên Chất</h3>
+            <p>Cam kết tổ yến thật, không sử dụng chất độn hay hóa chất bảo quản.</p>
           </div>
           <div className={styles.uspCard}>
-            <MapPin size={48} className={styles.uspIcon} />
-            <h3>Nha Trang Khánh Hoà</h3>
-            <p>Nguồn gốc tổ yến rõ ràng từ vùng biển Nha Trang, nơi yến sào có giá trị dinh dưỡng cao nhất.</p>
+            <Award size={48} className={styles.uspIcon} />
+            <h3 style={{ color: '#1A365D', fontWeight: 700 }}>Đạt Chuẩn An Toàn</h3>
+            <p>Quy trình tinh chế khép kín, đảm bảo giữ nguyên dinh dưỡng trong yến.</p>
           </div>
           <div className={styles.uspCard}>
-            <Feather size={48} className={styles.uspIcon} />
-            <h3>Tinh Hoa Tự Nhiên</h3>
-            <p>Hàm lượng protein và axit amin vượt trội, bồi bổ sức khoẻ cực tốt cho cả gia đình.</p>
+            <Truck size={48} className={styles.uspIcon} />
+            <h3 style={{ color: '#1A365D', fontWeight: 700 }}>Giao Hàng Tận Nơi</h3>
+            <p>Đóng gói sang trọng, bảo quản tiêu chuẩn, giao hàng siêu tốc toàn quốc.</p>
           </div>
         </div>
       </section>
 
       {/* Sản Phẩm Nổi Bật */}
       <section className={`container ${styles.section}`}>
-        <h2 className={styles.sectionTitle}>Sản Phẩm Nổi Bật</h2>
+        <div style={{ textAlign: 'center' }}>
+           <div className={styles.titleGlassPill}>
+             <h2 className={styles.sectionTitle}>Sản Phẩm Nổi Bật</h2>
+           </div>
+        </div>
         <div className={styles.productGrid}>
           {/* Mockup Product 1 */}
           <Link href="/san-pham/yen-tinh-che-loai-1" className={styles.productCard}>
@@ -109,9 +115,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Review Khách Hàng */}
+      {/* Đánh Giá Khách Hàng */}
       <section className={`container ${styles.section}`}>
-        <h2 className={styles.sectionTitle}>Khách Hàng Nói Gì Về Chúng Tôi</h2>
+        <div style={{ textAlign: 'center' }}>
+           <div className={styles.titleGlassPill}>
+             <h2 className={styles.sectionTitle}>Khách Hàng Nói Gì Về Chúng Tôi</h2>
+           </div>
+        </div>
         <div className={styles.reviewGrid}>
           <div className={styles.reviewCard}>
             <p>"Yến sào ở đây rất sạch, khi chưng lên nở rất nhiều và thơm ngon. Mình mua cho ba mẹ bồi bổ, cả nhà đều khen."</p>
