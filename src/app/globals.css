@@ -36,8 +36,8 @@
 
 body {
   font-family: var(--font-inter), sans-serif;
-  color: #FDFBF7; /* Đổi màu chữ cơ bản thành màu trắng ngà cho nổi trên nền đen */
-  /* Nền đại dương được làm tối đi để chữ và thẻ kính nổi bật hơn */
+  color: #1A365D; /* Đổi tất cả chữ màu trắng thành màu xanh Navy theo yêu cầu */
+  /* Nền đại dương được làm tối đi để thẻ kính và chữ nổi bật */
   background: linear-gradient(rgba(10, 15, 25, 0.6), rgba(10, 15, 25, 0.8)), url('/banner.png') center/cover no-repeat fixed;
   line-height: 1.6;
   min-height: 100vh;
@@ -45,7 +45,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-playfair), serif; /* Classic, premium feel */
-  color: var(--color-secondary); /* Đổi tiêu đề thành vàng đồng ánh kim cao cấp */
+  color: #1A365D; /* Xanh Navy cho tiêu đề phụ */
   margin-bottom: var(--spacing-md);
   font-weight: 600;
 }

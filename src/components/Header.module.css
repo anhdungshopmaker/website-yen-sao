@@ -1,8 +1,8 @@
 .header {
-  background: rgba(10, 15, 25, 0.4);
+  background: rgba(255, 255, 255, 0.85); /* Kính sáng để màu xanh navy đọc được */
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -46,8 +46,8 @@
 }
 
 .navLink {
-  color: #FDFBF7;
-  font-weight: 500;
+  color: #1A365D; /* Xanh Navy */
+  font-weight: 600;
   text-decoration: none;
   transition: color 0.3s ease;
 }

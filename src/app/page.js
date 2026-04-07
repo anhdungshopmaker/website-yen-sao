@@ -9,8 +9,13 @@ export default function Home() {
       {/* Banner Khởi Đầu */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          <h1 style={{ color: 'white', textShadow: '2px 2px 8px rgba(0,0,0,0.5)', fontFamily: 'var(--font-playfair)' }}>Yến Sào Miền Biển Nguyên Chất</h1>
-          <p style={{ color: 'white', textShadow: '1px 1px 4px rgba(0,0,0,0.5)' }}>Thu hoạch từ những nhà yến lâu năm tại Nha Trang - Khánh Hoà. Chắt lọc tinh hoa từ tự nhiên, mang đến sức khỏe vàng cho bạn và gia đình.</p>
+          <h1 className={styles.heroTitle}>
+            Yến Sào Miền Biển <br/>
+            Nguyên Chất
+          </h1>
+          <div style={{ marginTop: '20px' }}>
+             <p className={styles.heroSubtitle}>Thu hoạch từ những nhà yến lâu năm tại Nha Trang - Khánh Hoà.<br/> Chắt lọc tinh hoa từ tự nhiên, mang đến sức khỏe vàng cho bạn và gia đình.</p>
+          </div>
         </div>
       </section>
 
