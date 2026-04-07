@@ -6,8 +6,11 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={`container ${styles.headerContainer}`}>
-        <Link href="/" className={styles.logoCircle}>
-          <img src="/logo.png" alt="Công ty Yến Thành" />
+        <Link href="/" className={styles.logoGroup}>
+          <div className={styles.logoCircle}>
+            <img src="/logo.png" alt="Công ty Yến Thành" />
+          </div>
+          <span className={styles.logoText}>YẾN SÀO YẾN THÀNH</span>
         </Link>
         <nav className={styles.nav}>
           <Link href="/" className={styles.navLink}>Trang chủ</Link>

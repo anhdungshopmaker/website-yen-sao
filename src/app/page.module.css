@@ -67,12 +67,22 @@
   font-size: 2.2rem;
   margin: 0;
   font-family: var(--font-playfair);
+  /* Xóa text-shadow tránh lỗi trên đt Safari làm mất chữ */
   background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-weight: 700;
-  text-shadow: 1px 1px 0px rgba(100, 70, 15, 0.4);
+  font-weight: 800;
+  /* Kể cả fallback */
+  -webkit-text-fill-color: transparent;
+}
+
+/* Đảm bảo căn giữa tuyệt đối */
+.titleWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: var(--spacing-2xl);
 }
 
 .uspGrid {
@@ -223,30 +233,44 @@
   .productGrid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .heroTitle {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 768px) {
+  .section {
+    padding: var(--spacing-xl) 10px; /* Thu hẹp padding đt */
+  }
   .heroTitle {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
   .heroSubtitle {
     font-size: 1rem;
     padding: 10px 20px;
+    line-height: 1.4;
   }
   .uspGrid, .reviewGrid {
     grid-template-columns: 1fr;
+    gap: var(--spacing-md);
   }
   .sectionTitle {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .titleGlassPill {
-    padding: 10px 20px;
+    padding: 8px 15px;
+    margin-bottom: var(--spacing-xl);
+    width: 90%; /* ko bị tràn 2 bên */
+  }
+  .uspCard, .reviewCard, .productCard {
+    padding: 15px;
   }
 }
 
 @media (max-width: 480px) {
   .productGrid {
     grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
   }
 }
 

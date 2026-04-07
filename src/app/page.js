@@ -21,7 +21,7 @@ export default function Home() {
 
       {/* Unique Selling Proposition (USP) */}
       <section className={`container ${styles.section}`}>
-        <div style={{ textAlign: 'center' }}>
+        <div className={styles.titleWrapper}>
            <div className={styles.titleGlassPill}>
              <h2 className={styles.sectionTitle}>Tại sao chọn Yến Thành?</h2>
            </div>
@@ -47,7 +47,7 @@ export default function Home() {
 
       {/* Sản Phẩm Nổi Bật */}
       <section className={`container ${styles.section}`}>
-        <div style={{ textAlign: 'center' }}>
+        <div className={styles.titleWrapper}>
            <div className={styles.titleGlassPill}>
              <h2 className={styles.sectionTitle}>Sản Phẩm Nổi Bật</h2>
            </div>
@@ -117,7 +117,7 @@ export default function Home() {
 
       {/* Đánh Giá Khách Hàng */}
       <section className={`container ${styles.section}`}>
-        <div style={{ textAlign: 'center' }}>
+        <div className={styles.titleWrapper}>
            <div className={styles.titleGlassPill}>
              <h2 className={styles.sectionTitle}>Khách Hàng Nói Gì Về Chúng Tôi</h2>
            </div>
